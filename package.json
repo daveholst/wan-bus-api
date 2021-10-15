@@ -1,0 +1,14 @@
+{
+  "name": "wan-bus-api",
+  "version": "1.0.0",
+  "main": "handler.js",
+  "repository": "git@github.com:daveholst/wan-bus-api.git",
+  "author": "Dave Holst <46893433+daveholst@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-serverless-express": "^3.4.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
