@@ -12,5 +12,8 @@
     "dayjs": "^1.10.7",
     "express": "^4.17.1",
     "transperthapi": "^1.0.3"
+  },
+  "devDependencies": {
+    "serverless-domain-manager": "^5.1.5"
   }
 }
