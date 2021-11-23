@@ -14,10 +14,10 @@ provider:
 
 custom:
   customDomain:
-    domainName: bus.dh.wtf
+    domainName: api.bus.dh.wtf
     stage: ${self:provider.stage}
-    basePath: api
-    certificateName: '*.dh.wtf'
+    # basePath: api
+    certificateName: 'api.bus.dh.wtf'
     createRoute53Record: true
     endpointType: 'regional'
     securityPolicy: tls_1_2
@@ -29,7 +29,7 @@ functions:
   app-api:
     handler: handler.handler
     timeout: 10 #secs
-    memorySize: 128 #mb
+    memorySize: 512 #mb
     events:
       - http:
           path: /

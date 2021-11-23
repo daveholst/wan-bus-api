@@ -8,10 +8,13 @@ const routes = express.Router({
   mergeParams: true
 })
 
-const wanStop = '25349'
+// @WA News Stop Number For Testing
+// const wanStop = '25349'
+// const cityStop = '10084'
 
 routes.get('/', async (req, res) => {
-  const data = await Client.busStopTimes(wanStop)
+  const { stop } = req.query
+  const data = await Client.busStopTimes(stop)
   if (data.error) {
     console.error('inside if error', data.error)
     res.status(500).json({ error: data.error })
